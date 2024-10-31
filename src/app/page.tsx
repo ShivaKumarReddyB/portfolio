@@ -5,7 +5,11 @@ import Image from "next/image";
 
 export default function Home() {
   const [isDarkMode, setDarkMode] = useState(false);
-
+  const mediaPath = (path: string): string => {
+    return process.env.NEXT_PUBLIC_IS_GITHUB === "true"
+      ? `/portfolio${path}`
+      : path;
+  };
   return (
     <div className={`${isDarkMode && "dark"}`}>
       <main className="flex min-h-screen flex-col p-5 bg-neutral-100 dark:bg-neutral-900">
@@ -15,7 +19,7 @@ export default function Home() {
         >
           {isDarkMode ? (
             <Image
-              src="/portfolio/lightbulb.png"
+              src={mediaPath("/lightbulb.png")}
               alt="Profile Picture"
               width={35}
               height={35}
@@ -23,7 +27,7 @@ export default function Home() {
             />
           ) : (
             <Image
-              src="/portfolio/bulb.png"
+              src={mediaPath("/bulb.png")}
               alt="Profile Picture"
               width={35}
               height={35}
