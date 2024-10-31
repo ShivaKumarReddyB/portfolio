@@ -15,7 +15,7 @@ export default function Home() {
         >
           {isDarkMode ? (
             <Image
-              src="portfolio/lightbulb.png"
+              src="/portfolio/lightbulb.png"
               alt="Profile Picture"
               width={35}
               height={35}
@@ -23,7 +23,7 @@ export default function Home() {
             />
           ) : (
             <Image
-              src="portfolio/bulb.png"
+              src="/portfolio/bulb.png"
               alt="Profile Picture"
               width={35}
               height={35}
