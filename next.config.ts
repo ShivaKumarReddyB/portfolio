@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
-
+const isGitHub = process.env.NEXT_PUBLIC_IS_GITHUB === "true";
 const nextConfig: NextConfig = {
   /* config options here */
-  output: "export",
-  basePath: "/portfolio",
+  output: isGitHub ? "export" : "standalone",
+  basePath: isGitHub ? "/portfolio" : "",
   reactStrictMode: true,
 };
 
