@@ -11,13 +11,11 @@ export default function Home() {
       <main className="flex min-h-screen flex-col p-5 bg-neutral-100 dark:bg-neutral-900">
         <button
           onClick={() => setDarkMode((prevState) => !prevState)}
-          className={
-            "absolute right-10 bg-neutral-100 dark:bg-neutral-900 dark:bg-neutral-900 "
-          }
+          className={"absolute right-10 bg-neutral-100  dark:bg-neutral-900 "}
         >
           {isDarkMode ? (
             <Image
-              src="/lightbulb.png"
+              src="portfolio/lightbulb.png"
               alt="Profile Picture"
               width={35}
               height={35}
@@ -25,7 +23,7 @@ export default function Home() {
             />
           ) : (
             <Image
-              src="/bulb.png"
+              src="portfolio/bulb.png"
               alt="Profile Picture"
               width={35}
               height={35}
