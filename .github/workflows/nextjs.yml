@@ -74,7 +74,7 @@ jobs:
 
       - name: Build with Next.js
         env:
-          NEXT_PUBLIC_IS_GITHUB: ${{ secrets.NEXT_PUBLIC_IS_GITHUB }}
+          github-pages: ${{ secrets.NEXT_PUBLIC_IS_GITHUB }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact
