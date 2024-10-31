@@ -10,6 +10,7 @@ export default function Home() {
       ? `/portfolio${path}`
       : path;
   };
+  console.log(mediaPath("/portfolio"));
   return (
     <div className={`${isDarkMode && "dark"}`}>
       <main className="flex min-h-screen flex-col p-5 bg-neutral-100 dark:bg-neutral-900">
