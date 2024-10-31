@@ -39,7 +39,7 @@ export default function Home() {
             />
           )}
         </button>
-        <h1 className={"dark:text-white text-sky-800"}> Shiva Kumar Reddy B</h1>
+        <h1 className={"dark:text-white text-sky-800"}> SKR </h1>
       </main>
     </div>
   );
