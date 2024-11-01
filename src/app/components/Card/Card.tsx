@@ -10,7 +10,7 @@ const Card: React.FC = () => {
       {
         label: "LinkedIn",
         size: 48,
-        link: "https://www.linkedin.com/in/linked-in/",
+        link: "http://www.linkedin.com/in/shivakumarreddyb",
         alt: "LinkedIn",
         src: "/linkedin.svg",
       },
