@@ -13,6 +13,12 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const besterMind = localFont({
+  src: "./fonts/BestermindRegular.ttf",
+  variable: "--font-besterMind",
+  weight: "100 900",
+});
+
 export const metadata: Metadata = {
   title: "Shiva Reddy",
   description: "portfolio",
@@ -26,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  ${besterMind.variable}  antialiased`}
       >
         {children}
       </body>
