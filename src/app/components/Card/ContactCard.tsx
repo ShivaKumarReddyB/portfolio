@@ -2,9 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { mediaPath } from "@/app/util";
 import ClickableIcon from "@/app/components/ClickableIcon/ClickableIcon";
-import { kalamFont, permanentMarker } from "@/app/fonts/fonts.";
+import { permanentMarker, kalamFont } from "@/app/fonts/font";
 
-const Card: React.FC = () => {
+const ContactCard: React.FC = () => {
   const contactSection = () => {
     const aboutIcons = [
       {
@@ -57,7 +57,7 @@ const Card: React.FC = () => {
         />
         <div
           className={
-            "absolute top-[30%] left-[42%] dark:text-white text-sky-800"
+            "absolute top-[25%] left-[42%] dark:text-white text-sky-800"
           }
         >
           <p className={` text-5xl ${permanentMarker.className} `}>
@@ -73,12 +73,10 @@ const Card: React.FC = () => {
     );
   };
   return (
-    <div className="absolute  left-[171px] top-[297px] ">
-      <div className=" shadow-inner shadow-slate-900 absolute w-[600px] h-[450px] left-[20px] top-[20px] bg-[rgba(217,217,217,0.1)] border border-black rounded-[50px] box-border animate-slideInFromLeft ">
-        <ProfileSection />
-      </div>
+    <div className=" shadow-inner shadow-slate-900  w-[600px] h-[450px] bg-[rgba(217,217,217,0.1)] border border-black rounded-[50px] box-border">
+      <ProfileSection />
     </div>
   );
 };
 
-export default Card;
+export default ContactCard;
