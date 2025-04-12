@@ -1,0 +1,9 @@
+.nav-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+}
+

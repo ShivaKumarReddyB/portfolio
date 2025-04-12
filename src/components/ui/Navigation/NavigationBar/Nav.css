@@ -1,0 +1,37 @@
+.main-nav-bar {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: rgba(229, 215, 215, 0.296);
+    border-radius: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+
+@media (max-width: 480px) {/* Mobile and smaller screens */
+
+}
+@media (max-width: 768px) {  /* Mobile and smaller screens */
+    .main-nav-bar {
+        padding: 1rem
+    }
+    
+}
+
+@media (min-width: 769px) { /* Tablet and larger screens */
+    .main-nav-bar {
+        padding: 1px 10px;;
+    }
+
+}
+
+/* Mobile view */

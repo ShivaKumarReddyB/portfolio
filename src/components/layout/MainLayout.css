@@ -1,0 +1,11 @@
+.main-screen{
+    /* background: #0F2027;  
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
+background-image: url("/images/bg.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+
+}
