@@ -17,8 +17,8 @@ const NavButton: React.FC<NavButtonProps> = ({ label, iconSrc, onClick }) => {
      <Image
         src={iconSrc}
         alt={label}
-       width={100}
-       height={100}
+        width={100}
+        height={100}
         className="nav-button-icon"
       />
     </div>

@@ -1,11 +1,22 @@
 .main-screen{
-    /* background: #0F2027;  
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027);  */
-background-image: url("/images/bg.jpg");
+background-image: url("/images/Mountain-Mac-bg.png");
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100vh;
-
 }
+
+@media (max-width: 480px) {
+    .main-screen{
+        background-image: url("/images/Mountain-iPhone-bg.png");
+       
+    }
+}
+
+@media (max-width: 768px) {
+    .main-screen{
+        background-image: url("/images/Mountain-iPad-bg.png");
+       
+    }
+}
+
