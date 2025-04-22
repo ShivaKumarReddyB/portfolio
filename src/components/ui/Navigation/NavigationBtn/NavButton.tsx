@@ -1,7 +1,7 @@
 "use client";
-import React from 'react';
-import './NavButton.css';
-import Image from 'next/image';
+import React from "react";
+import "./NavButton.scss";
+import Image from "next/image";
 
 type NavButtonProps = {
   label: string;
@@ -10,11 +10,10 @@ type NavButtonProps = {
   disabled?: boolean;
 };
 
-
 const NavButton: React.FC<NavButtonProps> = ({ label, iconSrc, onClick }) => {
   return (
     <div className="nav-button" onClick={onClick} role="button" tabIndex={0}>
-     <Image
+      <Image
         src={iconSrc}
         alt={label}
         width={100}

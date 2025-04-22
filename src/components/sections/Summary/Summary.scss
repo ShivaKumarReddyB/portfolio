@@ -1,0 +1,46 @@
+.summary-container {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+
+  .summary-header {
+    background-color: var(--sticky-note-header-bg);
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 15px;
+    border-radius: 8px 8px 0px 0px;
+
+    .summary-square {
+      width: 11px;
+      height: 11px;
+      padding: 0 0;
+      margin: 5px 5px;
+      background-color: #f2f0df;
+      border: none;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .summary-triangle {
+      width: 11px;
+      height: 11px;
+      padding: 0;
+      margin: 5px 5px;
+      background-color: #f2f0df;
+      border: none;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  .summary-content {
+    background-color: var(--sticky-note-body-bg);
+    padding: 5px 5px;
+    border-radius: 0px 0px 8px 8px;
+  }
+}

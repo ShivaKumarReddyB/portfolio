@@ -1,0 +1,59 @@
+/* Renamed to StickyNote.scss */
+.sticky-note {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  cursor: grab;
+  user-select: none;
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  .sticky-note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    border-bottom: 1px solid #d0d0d0;
+  }
+
+  .close-button,
+  .maximize-button {
+    border: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 5px;
+
+    &.close-button {
+      background-color: #ff5f57;
+
+      &:hover {
+        background-color: #ff3b30;
+      }
+    }
+
+    &.maximize-button {
+      background-color: #28c940;
+
+      &:hover {
+        background-color: #1aab29;
+      }
+    }
+  }
+
+  .sticky-note-content {
+    overflow: auto;
+    height: calc(100% - 40px);
+  }
+}
